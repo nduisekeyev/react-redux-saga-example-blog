@@ -23,7 +23,7 @@ export default function Posts() {
       ) : (
         posts.map((item) => {
           return (
-            <Row className="posts">
+            <Row className="posts" key={item.id}>
               <Col lg={8} md={10} sm={12}>
                 <Link to={`/${item.id}`}>
                   <Card>

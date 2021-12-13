@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./pages/Home";
 import Singlepost from "./pages/SinglePost";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation";
 
 function App() {
@@ -9,10 +9,10 @@ function App() {
     <div className="App">
       <Router>
         <Navigation />
-        <Switch>
+        <Routes>
           <Route path="/" exact component={() => <Home />} />
           <Route path="/:id" exact component={() => <Singlepost />} />
-        </Switch>
+        </Routes>
       </Router>
     </div>
   );

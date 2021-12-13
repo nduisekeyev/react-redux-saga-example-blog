@@ -9,7 +9,7 @@ import {
   getPostDetailsFail,
 } from "./actions";
 
-import { getPosts, getPostDetails } from "../../helpers/backend/helpers";
+import { getPosts, getPostDetails } from "../../helpers/backend_helper";
 
 function* onGetPosts() {
   try {

@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./pages/Home";
 import Singlepost from "./pages/SinglePost";
-import { Route, Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <Navigation />
       <Routes>
-        <Route path="/" exact component={() => <Home />} />
-        <Route path="/:id" exact component={() => <Singlepost />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/:id" element={<Singlepost />} />
       </Routes>
     </div>
   );
